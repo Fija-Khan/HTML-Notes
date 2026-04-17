@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Day 6 - Forms and Inputs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #60a5fa;
+            margin-top: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            white-space: pre-line;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            background: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTML Day 6</h1>
+        <p class="subtitle">Forms and Input Elements</p>
+
+        <div class="box">
+            <h2>1. What is HTML Form?</h2>
+            <p>
+                An HTML form is used to collect user input.
+                It is used in login pages, signup pages, contact forms, and many real-world applications.
+            </p>
+
+            <p>
+                Forms help us send data from user to server.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>2. Basic Form Structure</h2>
+
+            <code>
+&lt;form&gt;
+
+  form elements here
+
+&lt;/form&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>3. Input Tag</h2>
+
+            <p>
+                The input tag is used to take user data in different formats.
+            </p>
+
+            <p>
+                It is a self-closing tag.
+            </p>
+
+            <code>
+&lt;input type="text"&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>4. Types of Input Fields</h2>
+
+            <h3>Text</h3>
+            <code>&lt;input type="text"&gt;</code>
+
+            <h3>Email</h3>
+            <code>&lt;input type="email"&gt;</code>
+
+            <h3>Password</h3>
+            <code>&lt;input type="password"&gt;</code>
+
+            <h3>Number</h3>
+            <code>&lt;input type="number"&gt;</code>
+
+            <h3>Radio</h3>
+            <code>&lt;input type="radio"&gt;</code>
+
+            <h3>Checkbox</h3>
+            <code>&lt;input type="checkbox"&gt;</code>
+
+            <h3>File Upload</h3>
+            <code>&lt;input type="file"&gt;</code>
+
+        </div>
+
+        <div class="box">
+            <h2>5. Other Form Elements</h2>
+
+            <h3>Textarea</h3>
+            <code>&lt;textarea&gt;&lt;/textarea&gt;</code>
+
+            <h3>Select Dropdown</h3>
+            <code>
+&lt;select&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+&lt;/select&gt;
+    </code>
+
+            <h3>Button</h3>
+            <code>&lt;button&gt;Submit&lt;/button&gt;</code>
+        </div>
+
+        <div class="box">
+            <h2>6. Form Attributes</h2>
+
+            <ul>
+                <li><b>action</b> - where data is sent</li>
+                <li><b>method</b> - GET or POST</li>
+            </ul>
+
+            <code>
+&lt;form action="server.php" method="post"&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>7. HTML Validation</h2>
+
+            <ul>
+                <li><b>required</b> - field must be filled</li>
+                <li><b>type="email"</b> - checks email format</li>
+                <li><b>min / max</b> - limit values</li>
+                <li><b>pattern</b> - custom validation</li>
+            </ul>
+
+            <code>
+&lt;input type="email" required&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>8.Form Example</h2>
+
+            <code>
+&lt;form&gt;
+
+  &lt;label&gt;Name&lt;/label&gt;
+  &lt;input type="text" required&gt;
+
+  &lt;label&gt;Email&lt;/label&gt;
+  &lt;input type="email" required&gt;
+
+  &lt;label&gt;Password&lt;/label&gt;
+  &lt;input type="password" required&gt;
+
+  &lt;label&gt;Gender&lt;/label&gt;
+  &lt;input type="radio" name="g"&gt; Male
+  &lt;input type="radio" name="g"&gt; Female
+
+  &lt;label&gt;Skills&lt;/label&gt;
+  &lt;input type="checkbox"&gt; HTML
+  &lt;input type="checkbox"&gt; CSS
+
+  &lt;label&gt;Message&lt;/label&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;
+
+  &lt;button&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+    </code>
+
+        </div>
+
+        <div class="box">
+            <h2>9. Important Points</h2>
+
+            <ul>
+                <li>Forms collect user data</li>
+                <li>Use proper input types</li>
+                <li>Always use validation</li>
+                <li>Used in all real websites</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>10. Common Mistakes</h2>
+
+            <ul>
+                <li>Missing name attribute</li>
+                <li>Not using label</li>
+                <li>Wrong input type</li>
+                <li>No validation</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Practice Tasks</h2>
+
+            <ul>
+                <li>Create registration form</li>
+                <li>Add all input types</li>
+                <li>Apply validation</li>
+                <li>Add dropdown and textarea</li>
+            </ul>
+
+            <p><b>Challenge:</b> Create complete signup page.</p>
+        </div>
+
+        <div class="box">
+            <h2>Interview Questions</h2>
+
+            <p><b>Q1:</b> What is HTML form?<br>Used to collect user input</p>
+            <p><b>Q2:</b> What is input tag?<br>Used to take user input</p>
+            <p><b>Q3:</b> Difference between GET and POST?<br>GET = visible, POST = secure</p>
+            <p><b>Q4:</b> What is required?<br>Makes field mandatory</p>
+            <p><b>Q5:</b> What is textarea?<br>Used for multi-line input</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
