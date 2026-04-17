@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Day 4 - Images, Links & Lists</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #60a5fa;
+            margin-top: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            white-space: pre-line;
+        }
+
+        .highlight {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTML Day 4</h1>
+        <p class="subtitle">Images, Links and Lists</p>
+
+        <div class="box">
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>How to add images in a webpage</li>
+                <li>How to create clickable links</li>
+                <li>Different types of lists in HTML</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>1. Image Tag (img)</h2>
+
+            <p>
+                The image tag is used to display images on a webpage.
+                It makes the website visually attractive and meaningful.
+            </p>
+
+            <p>
+                It is a <span class="highlight">self-closing tag</span>.
+            </p>
+
+            <code>
+&lt;img src="image.jpg" alt="My Image" width="200"&gt;
+    </code>
+
+            <p><b>Attributes:</b></p>
+            <ul>
+                <li><b>src</b> - Image path</li>
+                <li><b>alt</b> - Alternative text</li>
+                <li><b>width</b> - Image size</li>
+            </ul>
+
+            <p>
+                Always use alt attribute for better accessibility.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>2. Anchor Tag (a)</h2>
+
+            <p>
+                Anchor tag is used to create links between pages or websites.
+            </p>
+
+            <code>
+&lt;a href="https://google.com"&gt;Visit Google&lt;/a&gt;
+    </code>
+
+            <p><b>Attribute:</b></p>
+            <ul>
+                <li><b>href</b> - Link destination</li>
+            </ul>
+
+            <p>Open link in new tab:</p>
+
+            <code>
+&lt;a href="https://google.com" target="_blank"&gt;Open Google&lt;/a&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>3. Lists in HTML</h2>
+
+            <p>
+                HTML lists are used to organize content in a structured and readable format.
+            </p>
+
+            <h3>List Item Tag (li)</h3>
+
+            <p>
+                The <b>li</b> tag stands for List Item.
+                It is used to define each item inside a list.
+            </p>
+
+            <p>
+                The li tag is always used inside unordered list (ul) or ordered list (ol).
+                It cannot be used alone.
+            </p>
+
+            <p><b>Why we use li:</b></p>
+            <ul>
+                <li>To organize content clearly</li>
+                <li>To create lists of items</li>
+                <li>To show steps or structured data</li>
+            </ul>
+
+            <p><b>Important Points:</b></p>
+            <ul>
+                <li>li must be inside ul or ol</li>
+                <li>Each li represents one item</li>
+                <li>You can use multiple li tags</li>
+            </ul>
+
+            <p><b>Types of Lists:</b></p>
+            <ul>
+                <li>Unordered List (ul)</li>
+                <li>Ordered List (ol)</li>
+                <li>Description List (dl)</li>
+            </ul>
+
+            <h3>Unordered List (ul)</h3>
+            <p>Used when order does not matter. Shows bullet points.</p>
+
+            <code>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+    </code>
+
+            <h3>Types of Unordered List (ul)</h3>
+
+            <p>Unordered list uses different bullet styles using CSS.</p>
+
+            <code>
+&lt;ul style="list-style-type: disc;"&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul style="list-style-type: circle;"&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul style="list-style-type: square;"&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul style="list-style-type: none;"&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+    </code>
+
+            <h3>Ordered List (ol)</h3>
+            <p>Used when order is important. Shows numbering.</p>
+
+            <code>
+&lt;ol&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+    </code>
+
+            <h3>Types of Ordered List (ol)</h3>
+
+            <code>
+&lt;ol type="1"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="A"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="a"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="I"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="i"&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+    </code>
+
+            <h3>Description Data Tag (dd)</h3>
+
+            <p>
+                The <b>dd</b> tag is used to define the description of a term.
+            </p>
+
+            <code>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Structure of webpage&lt;/dd&gt;
+&lt;/dl&gt;
+    </code>
+
+        </div>
+
+        <div class="box">
+            <h2>4. Complete Example</h2>
+
+            <code>
+&lt;h1&gt;My Website&lt;/h1&gt;
+
+&lt;img src="photo.jpg" alt="Profile Image" width="200"&gt;
+
+&lt;a href="https://google.com" target="_blank"&gt;Visit Google&lt;/a&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Structure of webpage&lt;/dd&gt;
+&lt;/dl&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>Practice Tasks</h2>
+
+            <ul>
+                <li>Add one image</li>
+                <li>Create one link</li>
+                <li>Create unordered and ordered list</li>
+                <li>Create description list</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Interview Questions</h2>
+
+            <p><b>Q1:</b> What is img tag?<br>Used to display images.</p>
+            <p><b>Q2:</b> What is anchor tag?<br>Used to create links.</p>
+            <p><b>Q3:</b> Types of lists?<br>ul, ol, dl</p>
+            <p><b>Q4:</b> What is alt attribute?<br>Alternative text for image</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
