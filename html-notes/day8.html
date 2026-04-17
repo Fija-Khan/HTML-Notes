@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Media Tags</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #60a5fa;
+            margin-top: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            white-space: pre-line;
+        }
+
+        iframe,
+        video,
+        audio {
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Media in HTML</h1>
+        <p class="subtitle">iframe, video and audio tags</p>
+
+        <div class="box">
+            <h2>1. What is Media in HTML?</h2>
+
+            <p>
+                Media means adding video, audio, and external content into a webpage.
+            </p>
+
+            <p>
+                It makes your website more interactive and user-friendly.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>2. iframe Tag</h2>
+
+            <p>
+                The iframe tag is used to embed external content like YouTube videos or websites.
+            </p>
+
+            <code>
+&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;&lt;/iframe&gt;
+    </code>
+
+            <h3>Important Points</h3>
+            <ul>
+                <li>Always use embed link</li>
+                <li>Set width and height</li>
+                <li>Use allowfullscreen</li>
+            </ul>
+
+            <h3>Common Error</h3>
+            <ul>
+                <li>Using normal YouTube link</li>
+                <li>Wrong video ID</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>3. Video Tag</h2>
+
+            <p>
+                The video tag is used to add videos from your system or server.
+            </p>
+
+            <code>
+&lt;video width="400" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </code>
+
+            <h3>Attributes</h3>
+            <ul>
+                <li>controls - show buttons</li>
+                <li>autoplay - start automatically</li>
+                <li>loop - repeat video</li>
+                <li>muted - mute sound</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>4. Audio Tag</h2>
+
+            <p>
+                The audio tag is used to add sound or music.
+            </p>
+
+            <code>
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>5. When to Use What</h2>
+
+            <ul>
+                <li>Use iframe for YouTube or external content</li>
+                <li>Use video for your own video files</li>
+                <li>Use audio for sound files</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>6. Supported Formats</h2>
+
+            <ul>
+                <li>Video: mp4, webm</li>
+                <li>Audio: mp3, wav</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>7. Complete Example</h2>
+
+            <code>
+&lt;iframe width="300" height="200"
+src="https://www.youtube.com/embed/VIDEO_ID"&gt;&lt;/iframe&gt;
+
+&lt;video width="300" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>8. Live Preview</h2>
+
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+
+            <video width="300" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="box">
+            <h2>9. Important Points</h2>
+
+            <ul>
+                <li>iframe is used for external content</li>
+                <li>video tag is for local files</li>
+                <li>audio tag is for sound</li>
+                <li>Always use controls</li>
+                <li>Use correct file path</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>10. Common Mistakes</h2>
+
+            <ul>
+                <li>Wrong YouTube link</li>
+                <li>Missing controls attribute</li>
+                <li>Wrong file path</li>
+                <li>Unsupported format</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Practice Tasks</h2>
+
+            <ul>
+                <li>Add YouTube video using iframe</li>
+                <li>Add local video</li>
+                <li>Add audio file</li>
+            </ul>
+
+            <p><b>Challenge:</b> Create media gallery page</p>
+        </div>
+
+        <div class="box">
+            <h2>Interview Questions</h2>
+
+            <p><b>Q1:</b> What is iframe?<br>Used to embed external content</p>
+            <p><b>Q2:</b> Difference between iframe and video?<br>iframe = external, video = local</p>
+            <p><b>Q3:</b> What is controls?<br>Shows media buttons</p>
+            <p><b>Q4:</b> Supported formats?<br>mp4, mp3, etc</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
