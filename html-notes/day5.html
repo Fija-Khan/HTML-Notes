@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Day 5 - Tables</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #60a5fa;
+            margin-top: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            white-space: pre-line;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #1e293b;
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTML Day 5</h1>
+        <p class="subtitle">Tables in HTML</p>
+
+        <div class="box">
+            <h2>1. What is a Table?</h2>
+            <p>
+                An HTML table is used to display data in a structured format using rows and columns.
+                It helps to organize information clearly and makes it easy to read.
+            </p>
+            <p>
+                Tables are commonly used in real-world websites like reports, dashboards, and student data systems.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>2. Table Structure</h2>
+
+            <p>HTML table is created using multiple tags:</p>
+
+            <ul>
+                <li><b>table</b> - main container of the table</li>
+                <li><b>tr</b> - table row</li>
+                <li><b>th</b> - table heading (bold and centered)</li>
+                <li><b>td</b> - table data (normal content)</li>
+            </ul>
+
+            <p><b>Important Concept:</b></p>
+            <p>Table = Rows + Columns</p>
+
+            <code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Heading&lt;/th&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>3. Basic Table Example</h2>
+
+            <code>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;Ali&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </code>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>22</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <h2>4. Real-Life Example</h2>
+
+            <p>This example shows a student report table:</p>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Fiza</td>
+                    <td>HTML</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>CSS</td>
+                    <td>85</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <h2>5. Table Attributes</h2>
+
+            <h3>Border</h3>
+            <code>&lt;table border="1"&gt;</code>
+
+            <h3>Cell Padding</h3>
+            <code>&lt;table cellpadding="10"&gt;</code>
+
+            <h3>Cell Spacing</h3>
+            <code>&lt;table cellspacing="10"&gt;</code>
+        </div>
+
+        <div class="box">
+            <h2>6. Colspan</h2>
+            <p>Used to merge multiple columns into one.</p>
+
+            <code>
+&lt;th colspan="2"&gt;Student Info&lt;/th&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>7. Rowspan</h2>
+            <p>Used to merge multiple rows into one.</p>
+
+            <code>
+&lt;th rowspan="2"&gt;Name&lt;/th&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>8. Advanced Table Tags</h2>
+
+            <ul>
+                <li>thead - table header section</li>
+                <li>tbody - table body section</li>
+                <li>tfoot - table footer section</li>
+            </ul>
+
+            <code>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ali&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>9. Important Points</h2>
+
+            <ul>
+                <li>Tables are used to display structured data</li>
+                <li>Use th for headings and td for data</li>
+                <li>Always maintain proper structure</li>
+                <li>Use colspan and rowspan carefully</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>10. Common Mistakes</h2>
+
+            <ul>
+                <li>Forgetting tr tag</li>
+                <li>Wrong colspan or rowspan values</li>
+                <li>Not closing tags properly</li>
+                <li>Using td instead of th for headings</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Practice Tasks</h2>
+
+            <ul>
+                <li>Create table with Name, Age, City</li>
+                <li>Add at least 5 rows</li>
+                <li>Use colspan and rowspan</li>
+                <li>Create student report table</li>
+            </ul>
+
+            <p><b>Challenge:</b></p>
+            <p>Create a full student report table with subject and marks.</p>
+        </div>
+
+        <div class="box">
+            <h2>Interview Questions</h2>
+
+            <p><b>Q1:</b> What is table in HTML?<br>Used to display data in rows and columns.</p>
+            <p><b>Q2:</b> Difference between th and td?<br>th = heading, td = data</p>
+            <p><b>Q3:</b> What is colspan?<br>Used to merge columns</p>
+            <p><b>Q4:</b> What is rowspan?<br>Used to merge rows</p>
+            <p><b>Q5:</b> What is thead?<br>Table header section</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
