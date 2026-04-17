@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Day 3 - Headings & Paragraph</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #e5e7eb;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            font-size: 14px;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📘 HTML Day 3</h1>
+        <p class="subtitle">Headings & Paragraph</p>
+
+        <div class="box">
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>How headings organize a webpage</li>
+                <li>How paragraph tag displays content</li>
+                <li>How real websites structure text</li>
+                <li>Basic structure practice</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>1. HTML Headings (h1 to h6)</h2>
+
+            <p>
+                Headings are used to define <span class="highlight">titles and sections</span> of a webpage.
+                They help users understand the structure of content easily.
+            </p>
+
+            <p>
+                Think of headings like chapters in a book —
+                the main title is big, and sub-topics are smaller.
+            </p>
+
+            <code>
+&lt;h1&gt;Main Title&lt;/h1&gt; <br> 
+&lt;h2&gt;Sub Heading&lt;/h2&gt; <br>
+&lt;h3&gt;Section Heading&lt;/h3&gt; <br>
+&lt;h4&gt;Small Heading&lt;/h4&gt; <br>
+&lt;h5&gt;Smaller Heading&lt;/h5&gt; <br>
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;
+    </code>
+
+            <p>
+                <span class="highlight">Important:</span>
+                Always use only one <b>h1</b> for main title of page.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>2. Paragraph Tag (&lt;p&gt;)</h2>
+
+            <p>
+                The paragraph tag is used to write normal text content on a webpage.
+                It helps display readable information for users.
+            </p>
+
+            <p>
+                Without paragraphs, your content will look messy and hard to understand.
+            </p>
+
+            <code>
+&lt;p&gt;This is a paragraph in HTML&lt;/p&gt;
+    </code>
+
+            <p>
+                 Paragraphs improve readability and make content clean.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>3. How Text Works in a Webpage</h2>
+
+            <p>
+                A webpage is made of structured text:
+            </p>
+
+            <ul>
+                <li><b>Headings</b> → for titles</li>
+                <li><b>Paragraphs</b> → for content</li>
+            </ul>
+
+            <p>
+                Together, they create a clean and understandable layout.
+            </p>
+
+            <code>
+&lt;h1&gt;My Website&lt;/h1&gt;
+&lt;p&gt;Welcome to my first website&lt;/p&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>4. Real Life Example</h2>
+
+            <ul>
+                <li>Heading = Title of a book 📖</li>
+                <li>Paragraph = Content inside book 📄</li>
+            </ul>
+
+            <p>
+                Without headings and paragraphs, content becomes confusing.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>5. Important Points</h2>
+
+            <ul>
+                <li>h1 is the most important heading</li>
+                <li>Use headings in proper order (h1 → h2 → h3)</li>
+                <li>Paragraph is used for normal content</li>
+                <li>Headings help in SEO (Google ranking)</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2> Practice Tasks</h2>
+
+            <p><b>Task 1:</b></p>
+            <ul>
+                <li>Create 1 h1 heading</li>
+                <li>Create 2 h2 headings</li>
+                <li>Add 2 paragraphs</li>
+            </ul>
+
+            <p><b>Task 2:</b></p>
+            <ul>
+                <li>Create "About Me" page</li>
+                <li>Add your name using h1</li>
+                <li>Add paragraph about yourself</li>
+            </ul>
+
+            <p><b>Challenge :</b></p>
+            <ul>
+                <li>Create 3 sections using headings</li>
+                <li>Add paragraph under each section</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+            <h2>Interview Questions</h2>
+
+            <p><b>Q1: What are HTML headings?</b><br>
+                Used to define titles and structure of webpage.</p>
+
+            <p><b>Q2: How many heading tags are there?</b><br>
+                There are 6 heading tags (h1 to h6).</p>
+
+            <p><b>Q3: What is paragraph tag?</b><br>
+                Used to display normal text content.</p>
+
+            <p><b>Q4: Why headings are important?</b><br>
+                They organize content and improve SEO.</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
