@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Day 9 - Registration Form Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #000;
+            color: white;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b82f6;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #d1d5db;
+        }
+
+        .box {
+            background: #111;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 14px;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #38bdf8;
+            white-space: pre-line;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            background: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .form-box {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registration Form Project</h1>
+        <p class="subtitle">Live Project + Explanation of HTML Form Inputs</p>
+
+        <div class="box">
+            <h2>1. What We Are Building</h2>
+
+            <p>
+                In this project, we will create a complete registration form.
+                This is used in real websites like signup pages.
+            </p>
+
+            <ul>
+                <li>User name input</li>
+                <li>Email input</li>
+                <li>Phone number input</li>
+                <li>Password input</li>
+                <li>File upload</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>2. Input Types Explained</h2>
+
+            <h3>Text Input</h3>
+            <p>Used for name, city, username.</p>
+
+            <code>
+&lt;input type="text" required&gt;
+    </code>
+
+            <h3>Email Input</h3>
+            <p>Automatically checks email format.</p>
+
+            <code>
+&lt;input type="email" required&gt;
+    </code>
+
+            <h3>Number Input</h3>
+            <p>Only accepts numbers like phone or age.</p>
+
+            <code>
+&lt;input type="number"&gt;
+    </code>
+
+            <h3>Password Input</h3>
+            <p>Hides text for security.</p>
+
+            <code>
+&lt;input type="password" required&gt;
+    </code>
+
+            <h3>File Upload</h3>
+            <p>Used to upload images or documents.</p>
+
+            <code>
+&lt;input type="file"&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>3. Important Attributes</h2>
+
+            <h3>Required</h3>
+            <p>Makes field mandatory (user must fill it).</p>
+
+            <code>
+&lt;input type="text" required&gt;
+    </code>
+
+            <h3>Placeholder</h3>
+            <p>Shows hint inside input box.</p>
+
+            <code>
+&lt;input type="text" placeholder="Enter your name"&gt;
+    </code>
+        </div>
+
+        <div class="box">
+            <h2>4. Complete Registration Form</h2>
+
+            <div class="form-box">
+
+                <form>
+
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="Enter phone number">
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" required>
+
+                    <label>Upload File</label>
+                    <input type="file">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>5. How This Form Works</h2>
+
+            <ul>
+                <li>User enters data in input fields</li>
+                <li>Required fields must be filled</li>
+                <li>Email is validated automatically</li>
+                <li>Form is submitted using submit button</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>6. Real World Use</h2>
+
+            <ul>
+                <li>Signup pages</li>
+                <li>Login forms</li>
+                <li>Job applications</li>
+                <li>Contact forms</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>7. Common Mistakes</h2>
+
+            <ul>
+                <li>Missing required attribute</li>
+                <li>Wrong input type</li>
+                <li>Not using email type for email</li>
+                <li>Not adding placeholders</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>8. Practice Task</h2>
+
+            <ul>
+                <li>Create your own registration form</li>
+                <li>Add name, email, password, phone</li>
+                <li>Add file upload</li>
+                <li>Apply required validation</li>
+            </ul>
+
+            <p><b>Challenge:</b> Create professional signup page like real websites.</p>
+        </div>
+
+        <div class="box">
+            <h2>9. Interview Questions</h2>
+
+            <p><b>Q1:</b> What is required attribute?<br>It makes field mandatory</p>
+
+            <p><b>Q2:</b> Why use email type?<br>It validates email format</p>
+
+            <p><b>Q3:</b> What is password type?<br>It hides entered text</p>
+
+            <p><b>Q4:</b> Why use number type?<br>To accept only numbers</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
