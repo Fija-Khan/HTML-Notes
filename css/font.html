@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Font & Text Styling - Complete Notes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #0b0f19, #000);
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 40px 15px;
+        }
+
+        .container {
+            width: 850px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #0f172a, #111827);
+            padding: 26px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2);
+        }
+
+        .title {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+
+        .point {
+            color: #e5e7eb;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .sub {
+            color: #93c5fd;
+            font-weight: bold;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 12px;
+            border-radius: 8px;
+            color: #38bdf8;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        .example {
+            background: #0b1220;
+            padding: 12px;
+            border-left: 4px solid #38bdf8;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✍️ CSS FONT & TEXT STYLING</h1>
+        <div class="subtitle">Learn with real life examples + simple explanations + practice</div>
+
+        <!-- FONT FAMILY -->
+        <div class="card">
+            <div class="title">1. FONT FAMILY</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Font-family is used to change the style of text (like handwriting
+                style).
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                Just like different people have different handwriting styles, websites also have different font styles.
+            </div>
+
+            <div class="example">
+                Example: Newspaper uses simple font, while Instagram uses modern stylish font.
+            </div>
+
+            <code>
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+      </code>
+        </div>
+
+        <!-- FONT SIZE -->
+        <div class="card">
+            <div class="title">2. FONT SIZE</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Controls how big or small text appears.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                Headings in books are big, normal text is small.
+            </div>
+
+            <code>
+h1 {
+  font-size: 30px;
+}
+      </code>
+        </div>
+
+        <!-- FONT WEIGHT -->
+        <div class="card">
+            <div class="title">3. FONT WEIGHT</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Makes text bold or thin.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                Important words in books are bold so we notice them easily.
+            </div>
+
+            <code>
+p {
+  font-weight: bold;
+}
+      </code>
+        </div>
+
+        <!-- TEXT ALIGN -->
+        <div class="card">
+            <div class="title">4. TEXT ALIGN</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Aligns text (left, right, center).
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                School notices are always center aligned for better visibility.
+            </div>
+
+            <code>
+h1 {
+  text-align: center;
+}
+      </code>
+        </div>
+
+        <!-- TEXT TRANSFORM -->
+        <div class="card">
+            <div class="title">5. TEXT TRANSFORM</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Changes text into uppercase or lowercase.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                Headlines in newspapers are always in CAPITAL letters.
+            </div>
+
+            <code>
+p {
+  text-transform: uppercase;
+}
+      </code>
+        </div>
+
+        <!-- TEXT DECORATION -->
+        <div class="card">
+            <div class="title">6. TEXT DECORATION</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Adds or removes underline.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                Links on websites are underlined like important references.
+            </div>
+
+            <code>
+a {
+  text-decoration: none;
+}
+      </code>
+        </div>
+
+        <!-- LINE HEIGHT -->
+        <div class="card">
+            <div class="title">7. LINE HEIGHT</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Space between lines of text.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span>
+                If lines are too close, reading becomes difficult like crowded writing.
+            </div>
+
+            <code>
+p {
+  line-height: 1.6;
+}
+      </code>
+        </div>
+
+        <!-- INTERVIEW -->
+        <div class="card">
+            <div class="title">🎯 INTERVIEW QUESTIONS</div>
+
+            <div class="point">1. Difference between font-size and font-weight?</div>
+            <div class="point">2. What is font-family used for?</div>
+            <div class="point">3. Difference between px, em, rem?</div>
+            <div class="point">4. Why do we use text-transform?</div>
+            <div class="point">5. What is line-height in CSS?</div>
+        </div>
+
+        <!-- TASK -->
+        <div class="card">
+            <div class="title">🧠 STUDENT TASK</div>
+
+            <div class="point">
+                Create a webpage with:
+                <br>✔ Center heading
+                <br>✔ Paragraph in Arial font
+                <br>✔ Uppercase text
+                <br>✔ Proper spacing between lines
+                <br>✔ Stylish link (no underline)
+            </div>
+
+            <div class="final-box">
+                🔥 FINAL PROJECT IDEA:
+                Create a "Student Profile Card" using all font & text properties.
+            </div>
+        </div>
+
+        <!-- FINAL -->
+        <div class="card">
+            <div class="title">🚀 FINAL SUMMARY</div>
+
+            <div class="point">✔ Fonts = Style of text</div>
+            <div class="point">✔ Text styling = Readability + Design</div>
+            <div class="point">✔ Real life examples help understanding</div>
+
+            <div class="final-box">
+                🔥 FINAL LINE: CSS fonts and text styling are the foundation of every modern website UI.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
