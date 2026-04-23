@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layout & Display - Deep Notes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #0b0f19, #000);
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 40px 15px;
+        }
+
+        .container {
+            width: 900px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #0f172a, #111827);
+            padding: 26px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .title {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .point {
+            color: #e5e7eb;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+
+        .sub {
+            color: #93c5fd;
+            font-weight: bold;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 12px;
+            border-radius: 8px;
+            color: #38bdf8;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        .example {
+            background: #0b1220;
+            padding: 12px;
+            border-left: 4px solid #38bdf8;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        .final-box {
+            background: linear-gradient(145deg, #0ea5e9, #0369a1);
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📦 CSS LAYOUT & DISPLAY (DETAILED)</h1>
+        <div class="subtitle">Block, Inline, Overflow & Visibility with Types + Real Life Examples</div>
+
+        <!-- BLOCK -->
+        <div class="card">
+            <div class="title">1. BLOCK ELEMENTS</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Block elements take full width and always start on a new line.
+            </div>
+
+            <div class="point">
+                <span class="sub">Behavior:</span> They stack vertically (one below another).
+            </div>
+
+            <div class="example">
+                📌 Real Life: One person sitting alone on full bench
+            </div>
+
+            <code>
+div {
+  display: block;
+}
+      </code>
+        </div>
+
+        <!-- INLINE -->
+        <div class="card">
+            <div class="title">2. INLINE ELEMENTS</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Inline elements take only required space and stay in same line.
+            </div>
+
+            <div class="point">
+                <span class="sub">Behavior:</span> Width & height cannot be applied properly.
+            </div>
+
+            <div class="example">
+                📌 Real Life: Students sitting side by side on same bench
+            </div>
+
+            <code>
+span {
+  display: inline;
+}
+      </code>
+        </div>
+
+        <!-- INLINE BLOCK -->
+        <div class="card">
+            <div class="title">3. INLINE-BLOCK ELEMENTS</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Mix of block + inline behavior.
+            </div>
+
+            <div class="point">
+                <span class="sub">Behavior:</span> Stay in line + allow width/height.
+            </div>
+
+            <div class="example">
+                📌 Real Life: Small boxes arranged in a row
+            </div>
+        </div>
+
+        <!-- DIV VS SPAN -->
+        <div class="card">
+            <div class="title">4. DIV VS SPAN</div>
+
+            <div class="point">
+                <span class="sub">Div:</span> Block element used for layout structure.
+            </div>
+
+            <div class="point">
+                <span class="sub">Span:</span> Inline element used for styling text.
+            </div>
+
+            <div class="example">
+                📌 Real Life: Div = Room, Span = Decoration inside room
+            </div>
+        </div>
+
+        <!-- OVERFLOW -->
+        <div class="card">
+            <div class="title">5. OVERFLOW PROPERTY (WITH TYPES)</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Controls what happens when content is too big for its container.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span> Water overflowing from a glass
+            </div>
+
+            <div class="point">
+                <span class="sub">Types:</span>
+            </div>
+
+            <code>
+/* 1. hidden - hides extra content */
+div {
+  overflow: hidden;
+}
+      </code>
+
+            <code>
+/* 2. scroll - adds scroll bars */
+div {
+  overflow: scroll;
+}
+      </code>
+
+            <code>
+/* 3. auto - adds scroll only if needed */
+div {
+  overflow: auto;
+}
+      </code>
+
+            <code>
+/* 4. visible - default (content shows outside) */
+div {
+  overflow: visible;
+}
+      </code>
+        </div>
+
+        <!-- VISIBILITY -->
+        <div class="card">
+            <div class="title">6. VISIBILITY PROPERTY (WITH TYPES)</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Controls whether element is visible or not, but keeps space.
+            </div>
+
+            <div class="point">
+                <span class="sub">Real Life Example:</span> Object is covered with cloth but still exists
+            </div>
+
+            <div class="point">
+                <span class="sub">Types:</span>
+            </div>
+
+            <code>
+/* visible - default */
+div {
+  visibility: visible;
+}
+      </code>
+
+            <code>
+/* hidden - hides but space remains */
+div {
+  visibility: hidden;
+}
+      </code>
+
+            <code>
+/* collapse - used for table rows */
+div {
+  visibility: collapse;
+}
+      </code>
+        </div>
+
+        <!-- INTERVIEW -->
+        <div class="card">
+            <div class="title">🎯 INTERVIEW QUESTIONS</div>
+
+            <div class="point">✔ Difference between block and inline?</div>
+            <div class="point">✔ What is inline-block?</div>
+            <div class="point">✔ Difference between div and span?</div>
+            <div class="point">✔ Difference between overflow hidden and scroll?</div>
+            <div class="point">✔ Difference between visibility hidden and display none?</div>
+        </div>
+
+        <!-- TASK -->
+        <div class="card">
+            <div class="title">🧠 STUDENT TASK</div>
+
+            <div class="point">
+                Create webpage with:
+                <br>✔ Block elements layout
+                <br>✔ Inline text elements
+                <br>✔ Inline-block boxes
+                <br>✔ Overflow hidden + scroll examples
+                <br>✔ Visibility hidden example
+                <br>✔ Div vs span demo
+            </div>
+
+            <div class="final-box">
+                🔥 BONUS TASK: Create a card layout using inline-block or flex
+            </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="card">
+            <div class="title">🚀 FINAL SUMMARY</div>
+
+            <div class="point">✔ Block = full width structure</div>
+            <div class="point">✔ Inline = same line text</div>
+            <div class="point">✔ Inline-block = mix behavior</div>
+            <div class="point">✔ Overflow = content control system</div>
+            <div class="point">✔ Visibility = show/hide control</div>
+            <div class="point">✔ Div = layout, Span = text styling</div>
+
+            <div class="final-box">
+                🔥 Final Line: CSS layout controls how everything appears on screen.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
