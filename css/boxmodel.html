@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Box Model - Learning System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #0b0f19, #000);
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 40px 15px;
+        }
+
+        .container {
+            width: 900px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #0f172a, #111827);
+            padding: 26px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2);
+        }
+
+        .title {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .point {
+            color: #e5e7eb;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+
+        .sub {
+            color: #93c5fd;
+            font-weight: bold;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            padding: 12px;
+            border-radius: 8px;
+            color: #38bdf8;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        .example {
+            background: #0b1220;
+            padding: 12px;
+            border-left: 4px solid #38bdf8;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        .quiz {
+            background: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px solid #334155;
+        }
+
+        .final-box {
+            background: linear-gradient(145deg, #0ea5e9, #0369a1);
+            padding: 18px;
+            border-radius: 12px;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📦 CSS BOX MODEL</h1>
+        <div class="subtitle">Learn → Understand → Practice → Test Yourself</div>
+
+        <!-- INTRO -->
+        <div class="card">
+            <div class="title">1. WHAT IS BOX MODEL?</div>
+
+            <div class="point">
+                <span class="sub">Definition:</span> Every HTML element is a rectangular box that has content, padding,
+                border, and margin.
+            </div>
+
+            <div class="example">
+                📌 Real Life Example:
+                Gift Box 🎁 = Content (gift) + Padding (foam) + Border (box) + Margin (space)
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="card">
+            <div class="title">2. CONTENT</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> The actual text, image or data inside the element.
+            </div>
+
+            <code>
+div {
+  width: 200px;
+  height: 100px;
+}
+      </code>
+
+            <div class="example">
+                💡 Example: Text inside a button is content.
+            </div>
+        </div>
+
+        <!-- PADDING -->
+        <div class="card">
+            <div class="title">3. PADDING</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Space between content and border.
+            </div>
+
+            <code>
+div {
+  padding: 20px;
+}
+      </code>
+
+            <div class="example">
+                💡 Example: Cushion inside a box protecting items.
+            </div>
+        </div>
+
+        <!-- BORDER -->
+        <div class="card">
+            <div class="title">4. BORDER</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Line around the element.
+            </div>
+
+            <code>
+div {
+  border: 2px solid black;
+}
+      </code>
+
+            <div class="example">
+                💡 Example: Outer cover of a gift box.
+            </div>
+        </div>
+
+        <!-- MARGIN -->
+        <div class="card">
+            <div class="title">5. MARGIN</div>
+
+            <div class="point">
+                <span class="sub">Meaning:</span> Space outside the element.
+            </div>
+
+            <code>
+div {
+  margin: 30px;
+}
+      </code>
+
+            <div class="example">
+                💡 Example: Distance between two boxes on a table.
+            </div>
+        </div>
+
+        <!-- PRACTICE -->
+        <div class="card">
+            <div class="title">🧠 PRACTICE TASK</div>
+
+            <div class="point">
+                Create a box with:
+                <br>✔ Width 250px
+                <br>✔ Padding 20px
+                <br>✔ Border 2px solid red
+                <br>✔ Margin 40px
+                <br>✔ Add text inside
+            </div>
+        </div>
+
+        <!-- QUIZ -->
+        <div class="card">
+            <div class="title">🎯 QUICK QUIZ (SELF CHECK)</div>
+
+            <div class="quiz">1. What is padding used for?</div>
+            <div class="quiz">2. What is margin in CSS?</div>
+            <div class="quiz">3. What is inside content area?</div>
+            <div class="quiz">4. What is border?</div>
+        </div>
+
+        <!-- INTERVIEW -->
+        <div class="card">
+            <div class="title">🎯 INTERVIEW QUESTIONS</div>
+
+            <div class="point">✔ Explain CSS Box Model</div>
+            <div class="point">✔ Difference between padding and margin</div>
+            <div class="point">✔ What is box-sizing?</div>
+            <div class="point">✔ Why is box model important?</div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="card">
+            <div class="title">🚀 FINAL SUMMARY</div>
+
+            <div class="point">✔ Content = inside data</div>
+            <div class="point">✔ Padding = inner spacing</div>
+            <div class="point">✔ Border = boundary line</div>
+            <div class="point">✔ Margin = outer spacing</div>
+            <div class="point">✔ Box model = base of CSS layout</div>
+
+            <div class="final-box">
+                🔥 Final Line: If you understand Box Model, you understand CSS layout.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
